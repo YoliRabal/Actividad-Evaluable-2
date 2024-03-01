@@ -59,7 +59,6 @@ document.addEventListener('DOMContentLoaded', function() {
         resumenTrabajadores.appendChild(li);
       }
   
-      // Actualizar número de trabajadores en el departamento
       const cantidadTrabajadores = trabajadoresDepartamento ? trabajadoresDepartamento.length : 0;
       const selectedOption = departamentosResumen.querySelector(`option[value="${selectedDepartment}"]`);
       selectedOption.textContent = `${selectedDepartment} (${cantidadTrabajadores})`;
