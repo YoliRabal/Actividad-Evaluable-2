@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistema de gestión de trabajadores</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="estilo.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col d-flex align-items-center justify-content-center">
+            <h1 class="text-center my-4">Sistema de gestión de trabajadores</h1>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7">
+            <div class="form-group">
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" class="form-control" />
+            </div>
+            <div class="form-group">
+              <label for="apellido">Apellido</label>
+              <input type="text" id="apellido" class="form-control" />
+            </div>
+            <div class="form-group">
+              <label for="correo">Correo</label>
+              <input type="email" id="correo" class="form-control" />
+            </div>
+            <div class="form-group">
+              <label for="departamento">Departamento</label>
+              <select id="departamento" class="form-control">
+                <option value="IT">IT</option>
+                <option value="Marketing">Marketing</option>
+                <option value="Ventas">Ventas</option>
+                <option value="Administración">Administración</option>
+              </select>
+            </div>
+            <button id="agregar" class="btn btn-primary">
+              Agregar trabajador
+            </button>
+          </div>
+          <div class="col-md-5 text-center">
+            <h2>Lista de Trabajadores</h2>
+            <ul id="lista-trabajadores" class="list-group"></ul>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row mt-5">
+          <div class="col text-center">
+            <h2>Resumen de Trabajadores</h2>
+            <ul id="resumen-trabajadores" class="list-group"></ul>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="java.js"></script>
+  </body>
+</html>
